@@ -1,0 +1,78 @@
+2025-06-26 17:16:20.019 +05:30 [INF] User profile is available. Using 'C:\Users\DELL\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-26 17:16:20.609 +05:30 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2025-06-26 17:16:20.730 +05:30 [INF] Now listening on: https://localhost:7119
+2025-06-26 17:16:20.735 +05:30 [INF] Now listening on: http://localhost:5144
+2025-06-26 17:16:21.133 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-26 17:16:21.139 +05:30 [INF] Hosting environment: Development
+2025-06-26 17:16:21.146 +05:30 [INF] Content root path: D:\GitNewDemoProject\JobTrackingProject\JobTrackingProject
+2025-06-26 17:16:21.730 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger - null null
+2025-06-26 17:16:22.003 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger - 301 0 null 290.9209ms
+2025-06-26 17:16:22.015 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - null null
+2025-06-26 17:16:22.204 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - 200 null text/html;charset=utf-8 189.2542ms
+2025-06-26 17:16:22.213 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/swagger-ui-bundle.js - null null
+2025-06-26 17:16:22.213 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/swagger-ui.css - null null
+2025-06-26 17:16:22.215 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/swagger-ui-standalone-preset.js - null null
+2025-06-26 17:16:22.353 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-06-26 17:16:22.354 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-06-26 17:16:22.377 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 163.8633ms
+2025-06-26 17:16:22.382 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/swagger-ui.css - 200 152034 text/css 169.3917ms
+2025-06-26 17:16:22.403 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-26 17:16:22.448 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-06-26 17:16:22.452 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - null null
+2025-06-26 17:16:22.472 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 259.1929ms
+2025-06-26 17:16:22.478 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 74.7804ms
+2025-06-26 17:16:22.561 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - 200 null text/javascript; charset=UTF-8 109.5663ms
+2025-06-26 17:16:22.869 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - null null
+2025-06-26 17:16:22.915 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 47.485ms
+2025-06-26 18:37:53.013 +05:30 [INF] User profile is available. Using 'C:\Users\DELL\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-26 18:37:53.251 +05:30 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2025-06-26 18:37:53.370 +05:30 [INF] Now listening on: https://localhost:5001
+2025-06-26 18:37:53.380 +05:30 [INF] Now listening on: http://localhost:5000
+2025-06-26 18:37:53.544 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-26 18:37:53.547 +05:30 [INF] Hosting environment: Development
+2025-06-26 18:37:53.553 +05:30 [INF] Content root path: D:\GitNewDemoProject\JobTrackingProject\JobTrackingProject
+2025-06-26 18:37:54.358 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger - null null
+2025-06-26 18:37:54.542 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger - 301 0 null 193.2714ms
+2025-06-26 18:37:54.552 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - null null
+2025-06-26 18:37:54.646 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - null null
+2025-06-26 18:37:54.646 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - null null
+2025-06-26 18:37:54.652 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink - null null
+2025-06-26 18:37:54.646 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - null null
+2025-06-26 18:37:54.651 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-26 18:37:54.647 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 94.4129ms
+2025-06-26 18:37:54.792 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 141.3706ms
+2025-06-26 18:37:54.797 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-06-26 18:37:54.797 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-06-26 18:37:54.834 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 187.7127ms
+2025-06-26 18:37:54.834 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - 200 152034 text/css 188.0773ms
+2025-06-26 18:37:54.837 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-06-26 18:37:54.870 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 218.1567ms
+2025-06-26 18:37:54.891 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 245.2805ms
+2025-06-26 18:37:55.074 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - null null
+2025-06-26 18:37:55.110 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png - null null
+2025-06-26 18:37:55.129 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-06-26 18:37:55.137 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png - 200 628 image/png 27.2781ms
+2025-06-26 18:37:55.146 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 73.6044ms
+2025-06-26 18:41:39.608 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/JobTypes - application/json 40
+2025-06-26 18:41:46.023 +05:30 [INF] Executing endpoint 'JobTrackingProject.Controllers.JobTypesController.AddJobTypes (JobTrackingProject)'
+2025-06-26 18:41:46.082 +05:30 [INF] Route matched with {action = "AddJobTypes", controller = "JobTypes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AddJobTypes(JobTrackingProject.Domain.Entities.JobTypes) on controller JobTrackingProject.Controllers.JobTypesController (JobTrackingProject).
+2025-06-26 18:41:48.574 +05:30 [INF] Executed DbCommand (107ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [JobTypes] ([Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0);
+2025-06-26 18:41:48.620 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'JobTrackingProject.Domain.Entities.JobTypes'.
+2025-06-26 18:41:48.648 +05:30 [INF] Executed action JobTrackingProject.Controllers.JobTypesController.AddJobTypes (JobTrackingProject) in 2556.4963ms
+2025-06-26 18:41:48.652 +05:30 [INF] Executed endpoint 'JobTrackingProject.Controllers.JobTypesController.AddJobTypes (JobTrackingProject)'
+2025-06-26 18:41:50.357 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/JobTypes - 201 null application/json; charset=utf-8 10749.4505ms
+2025-06-26 18:47:31.393 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/api/JobTypes - null null
+2025-06-26 18:47:33.953 +05:30 [INF] Executing endpoint 'JobTrackingProject.Controllers.JobTypesController.GetJobTypes (JobTrackingProject)'
+2025-06-26 18:47:33.966 +05:30 [INF] Route matched with {action = "GetJobTypes", controller = "JobTypes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[JobTrackingProject.Domain.Entities.JobTypes]] GetJobTypes() on controller JobTrackingProject.Controllers.JobTypesController (JobTrackingProject).
+2025-06-26 18:47:34.375 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [j].[Id], [j].[Name]
+FROM [JobTypes] AS [j]
+2025-06-26 18:47:34.394 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JobTrackingProject.Domain.Entities.JobTypes, JobTrackingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-26 18:47:34.403 +05:30 [INF] Executed action JobTrackingProject.Controllers.JobTypesController.GetJobTypes (JobTrackingProject) in 426.0182ms
+2025-06-26 18:47:34.424 +05:30 [INF] Executed endpoint 'JobTrackingProject.Controllers.JobTypesController.GetJobTypes (JobTrackingProject)'
+2025-06-26 18:47:34.430 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/api/JobTypes - 200 null application/json; charset=utf-8 3046.2197ms
