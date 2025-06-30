@@ -167,3 +167,4 @@ D:\GitNewDemoProject\JobTrackingProject\JobTrackingProject\bin\Debug\net8.0\Syst
 D:\GitNewDemoProject\JobTrackingProject\JobTrackingProject\bin\Debug\net8.0\System.Text.Encodings.Web.dll
 D:\GitNewDemoProject\JobTrackingProject\JobTrackingProject\bin\Debug\net8.0\System.Text.Json.dll
 D:\GitNewDemoProject\JobTrackingProject\JobTrackingProject\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\GitNewDemoProject\JobTrackingProject\JobTrackingProject\obj\Debug\net8.0\JobTrackingProject.sourcelink.json
