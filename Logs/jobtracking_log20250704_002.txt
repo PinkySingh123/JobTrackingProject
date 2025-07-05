@@ -1,0 +1,59 @@
+2025-07-04 21:18:51.625 +05:30 [INF] User profile is available. Using 'C:\Users\DELL\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-04 21:18:51.880 +05:30 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2025-07-04 21:18:51.957 +05:30 [INF] Now listening on: https://localhost:5001
+2025-07-04 21:18:51.962 +05:30 [INF] Now listening on: http://localhost:5000
+2025-07-04 21:18:52.051 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-04 21:18:52.060 +05:30 [INF] Hosting environment: Development
+2025-07-04 21:18:52.067 +05:30 [INF] Content root path: D:\GitNewDemoProject\JobTrackingProject\JobTrackingProject
+2025-07-04 21:18:52.513 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger - null null
+2025-07-04 21:18:52.696 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger - 301 0 null 194.2551ms
+2025-07-04 21:18:52.703 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - null null
+2025-07-04 21:18:52.787 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-04 21:18:52.786 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - null null
+2025-07-04 21:18:52.786 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - null null
+2025-07-04 21:18:52.786 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - null null
+2025-07-04 21:18:52.786 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink - null null
+2025-07-04 21:18:52.786 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 83.1604ms
+2025-07-04 21:18:52.909 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-07-04 21:18:52.839 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 51.8997ms
+2025-07-04 21:18:52.935 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 149.1947ms
+2025-07-04 21:18:52.929 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-07-04 21:18:52.909 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-07-04 21:18:52.960 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 173.5914ms
+2025-07-04 21:18:52.964 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 178.5835ms
+2025-07-04 21:18:52.967 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - 200 152034 text/css 181.3863ms
+2025-07-04 21:18:53.084 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - null null
+2025-07-04 21:18:53.121 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 38.1242ms
+2025-07-04 21:19:09.448 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Statuses - null null
+2025-07-04 21:19:09.575 +05:30 [INF] Executing endpoint 'JobTrackingProject.Controllers.StatusesController.GetStatuses (JobTrackingProject)'
+2025-07-04 21:19:09.600 +05:30 [INF] Route matched with {action = "GetStatuses", controller = "Statuses"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[JobTrackingProject.Domain.Entities.Status]] GetStatuses() on controller JobTrackingProject.Controllers.StatusesController (JobTrackingProject).
+2025-07-04 21:19:09.790 +05:30 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[JobTrackingProject.Domain.Entities.Status, JobTrackingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-04 21:19:11.503 +05:30 [INF] Executed DbCommand (111ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Name]
+FROM [Statuses] AS [s]
+2025-07-04 21:19:11.621 +05:30 [INF] Executed action JobTrackingProject.Controllers.StatusesController.GetStatuses (JobTrackingProject) in 2002.5043ms
+2025-07-04 21:19:11.631 +05:30 [INF] Executed endpoint 'JobTrackingProject.Controllers.StatusesController.GetStatuses (JobTrackingProject)'
+2025-07-04 21:19:11.653 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Statuses - 200 null application/json; charset=utf-8 2206.5701ms
+2025-07-04 21:20:23.992 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Statuses - application/json 31
+2025-07-04 21:20:24.023 +05:30 [INF] Executing endpoint 'JobTrackingProject.Controllers.StatusesController.AddStatuses (JobTrackingProject)'
+2025-07-04 21:20:24.052 +05:30 [INF] Route matched with {action = "AddStatuses", controller = "Statuses"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AddStatuses(JobTrackingProject.Domain.Entities.Status) on controller JobTrackingProject.Controllers.StatusesController (JobTrackingProject).
+2025-07-04 21:20:24.434 +05:30 [INF] Executed DbCommand (59ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Statuses] ([Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0);
+2025-07-04 21:20:24.493 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'JobTrackingProject.Domain.Entities.Status'.
+2025-07-04 21:20:24.558 +05:30 [INF] Executed action JobTrackingProject.Controllers.StatusesController.AddStatuses (JobTrackingProject) in 490.3125ms
+2025-07-04 21:20:24.575 +05:30 [INF] Executed endpoint 'JobTrackingProject.Controllers.StatusesController.AddStatuses (JobTrackingProject)'
+2025-07-04 21:20:24.583 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Statuses - 201 null application/json; charset=utf-8 591.8084ms
+2025-07-04 21:20:54.946 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Statuses - null null
+2025-07-04 21:20:54.979 +05:30 [INF] Executing endpoint 'JobTrackingProject.Controllers.StatusesController.GetStatuses (JobTrackingProject)'
+2025-07-04 21:20:54.985 +05:30 [INF] Route matched with {action = "GetStatuses", controller = "Statuses"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[JobTrackingProject.Domain.Entities.Status]] GetStatuses() on controller JobTrackingProject.Controllers.StatusesController (JobTrackingProject).
+2025-07-04 21:20:55.002 +05:30 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[JobTrackingProject.Domain.Entities.Status, JobTrackingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-04 21:20:55.130 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Name]
+FROM [Statuses] AS [s]
+2025-07-04 21:20:55.141 +05:30 [INF] Executed action JobTrackingProject.Controllers.StatusesController.GetStatuses (JobTrackingProject) in 142.724ms
+2025-07-04 21:20:55.165 +05:30 [INF] Executed endpoint 'JobTrackingProject.Controllers.StatusesController.GetStatuses (JobTrackingProject)'
+2025-07-04 21:20:55.171 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Statuses - 200 null application/json; charset=utf-8 227.5968ms
