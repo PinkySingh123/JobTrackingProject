@@ -1,0 +1,144 @@
+
+
+# User-specific files and IDE
+# Files related to specific IDE settings and user preferences
+.vs/
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+.vscode/
+.idea/
+*.sln.DotSettings
+*.user # Rider specific user files
+*.resharper # ReSharper specific files
+*.vspscc
+*.vssscc
+*.vsscc
+
+# Build results and temporary files
+# Common output directories and generated build artifacts
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+bld/
+publish/
+*.dll
+*.exe
+*.pdb
+*.refonly.dll
+*.deploy
+*.cache
+*.dbmdl
+*.tlog
+*.log
+*.lib
+*.exp
+*.bak
+*.sbr
+*.res
+*.pch
+*.ilk
+*.idb
+*.ipdb
+*.iobj
+*.bsc
+*.o
+*.ncb
+*.vc.db
+*.aps
+*.lck
+*.vbs
+*.vsmacros
+*.vpw
+*_i.c
+*_p.c
+*.tmp
+*.temp
+*.~
+*.pidb
+*.vsix
+*.vsixmanifest
+apphost.exe
+*.SourceLink.json
+*.zip
+*.7z
+*.gz
+*.rar
+*.tar
+
+# Build results of an ATL Project
+[Dd]ebugPS/
+[Rr]eleasePS/
+dlldata.c
+
+# Visual Studio Profiler
+*.psess
+*.vsp
+*.vspx
+
+# TFS-specific files
+$tf/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# DotCover
+*.dotCover
+
+# Logs
+[Ll]ogs/ # General log directory
+*.log # Individual log files (already included above, but kept for clarity)
+
+# NPM Packages
+node_modules/
+
+# NuGet Packages (modern & old project compatibility)
+# This covers the 'packages' directory for modern projects
+packages/
+# For older projects that might have packages in the solution root with specific structure
+**/packages/*
+!**/packages/build/
+!**/packages/repositories.config
+*.nupkg
+*.snupkg
+*.lock.json
+project.lock.json # Old .NET Core format
+nuget.config
+.nuget/
+*.nuget.props
+*.nuget.targets
+
+# Entity Framework Migrations History
+_MigrationsHistory/
+
+# Local Database Files
+*.mdf
+*.ldf
+*.db
+*.sqlite
+
+# Docker Compose override files (local development)
+docker-compose.override.yml
+
+# Operating System specific files
+.DS_Store # macOS
+Thumbs.db # Windows thumbnail cache
+Icon? # macOS
+
+# Miscellaneous other files that might be generated
+*.fxcop
+*.sps
+*.local
+*.pubxml
+*.publishproj
+.sqlproj.user
+
+# Ignore auto-generated assembly info changes
+**/AssemblyInfo.cs
