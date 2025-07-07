@@ -22,7 +22,10 @@ namespace JobTrackingProject.Application.Services
         }
         public void UpdateStatus(Status status)
         {
-           _context.Statuses.Update(status);
+            var existingStatus = _context.Statuses.Find(status.Id);
+            if (existingStatus == null)
+                throw new Exception("Status not found.");
+                existingStatus.Name= status.Name;
             _context.SaveChanges();
         }
 
