@@ -45,4 +45,23 @@ jobs:
           tags: |
             ${{ secrets.DOCKER_USERNAME }}/jobtrackingapi:${{ github.sha }}
             ${{ secrets.DOCKER_USERNAME }}/jobtrackingapi:latest
-        
+         
+  deploy:
+      needs: build
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: SSH to server and deploy
+          uses: appleboy/ssh-action@v1.0.0
+          with:
+           host: ${{ secrets.SERVER_IP }}
+           username: ${{ secrets.SERVER_USER }}
+           key: ${{ secrets.SERVER_SSH_KEY }}
+           script: |
+            docker pull ${{ secrets.DOCKER_USERNAME }}/jobtrackingapi:latest
+            docker stop jobtrackingapi || true
+            docker rm jobtrackingapi || true
+            docker run -d -p 8080:80 --name jobtrackingapi \
+              -e Jwt__Key=${{ secrets.JWT_SECRET }} \
+              ${{ secrets.DOCKER_USERNAME }}/jobtrackingapi:latest 
+

@@ -18,11 +18,6 @@ namespace JobTrackingProject.Application.Validation
                 .NotEmpty().WithMessage("Location is required")
                 .MaximumLength(100).WithMessage("Location must be less than 100 characters");
 
-            RuleFor(job => job.StatusId)
-                .NotEmpty().WithMessage("Status is required")
-                .Must(status => new[] { "Applied", "Interview", "Offered", "Rejected" }.Contains(status))
-                .WithMessage("Status must be one of: Applied, Interview, Offered, Rejected");
-
             RuleFor(job => job.ApplicationDate)
                 .LessThanOrEqualTo(DateTime.Now).WithMessage("Applied date cannot be in the future");
         }

@@ -37,7 +37,8 @@ namespace JobTrackingProject.Controllers
             var audience = jwtSettings["Audience"];
 
             var claims = new[] {
-                new Claim(ClaimTypes.Name,username)
+                new Claim(ClaimTypes.Name,username),
+                new Claim(JwtRegisteredClaimNames.Sub, username)
             };
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
@@ -46,7 +47,7 @@ namespace JobTrackingProject.Controllers
                 issuer,
                 audience,
                 claims,
-                expires: DateTime.Now.AddMinutes(60),
+                expires: DateTime.UtcNow.AddMinutes(60),
                 signingCredentials: creds
             );
 

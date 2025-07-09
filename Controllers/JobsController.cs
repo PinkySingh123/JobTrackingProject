@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace JobTrackingProject.Controllers
 {
     [Route("api/[controller]")]
-   // [Authorize]
+    [Authorize]
     [ApiController]
     public class JobsController : ControllerBase
     {

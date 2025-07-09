@@ -3,13 +3,15 @@ using JobTrackingProject.Application.Interfaces;
 using JobTrackingProject.Application.Services;
 using JobTrackingProject.Infrastructure.Data;
 using JobTrackingProject.Middleware;
+using Microsoft.IdentityModel.Logging;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using Serilog;
 using System.Text;
 
-
+IdentityModelEventSource.ShowPII = true;
 var builder = WebApplication.CreateBuilder(args);
 
 var jwtSetting = builder.Configuration.GetSection("JwtSettings");
@@ -31,7 +33,18 @@ builder.Services.AddAuthentication(options =>
           ValidAudience = jwtSetting["Audience"],
           IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
       };
+
+      options.Events = new JwtBearerEvents
+      {
+          OnAuthenticationFailed = context =>
+          {
+              Console.WriteLine($"Token failed: {context.Exception.Message}");
+              return Task.CompletedTask;
+          }
+      };
   });
+
+
 
 
 //Add EF Core with SQL server
@@ -47,7 +60,35 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IJobTypeService, JobTypesService>();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+//builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    // Add JWT Auth to Swagger
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "Bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "Enter 'Bearer' [space] and then your valid token in the text box below.\n\nExample: Bearer eyJhbGciOiJIUzI1NiIsInR..."
+    });
+
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            Array.Empty<string>()
+        }
+    });
+});
 
 builder.Services.AddControllers()
     .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<Program>());
