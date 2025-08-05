@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace JobTrackingProject.Controllers
 {
     [Route("api/[controller]")]
-   // [Authorize]
+    [Authorize]
     [ApiController]
     public class UsersController : ControllerBase
     {
@@ -15,15 +15,15 @@ namespace JobTrackingProject.Controllers
         {
             _UserSerivce = userSerivce;
         }
-       
+
         [HttpGet]
-        public ActionResult <IEnumerable<User>> GetUsers()
+        public ActionResult<IEnumerable<User>> GetUsers()
         {
             return Ok(_UserSerivce.GetUsers());
         }
-        
+
         [HttpGet("{id}")]
-        public ActionResult<User> GetUserById(int id)
+        public ActionResult<User> GetUserById(string id)
         {
             var job = _UserSerivce.GetUserById(id);
             if (job == null) return NotFound();
@@ -38,7 +38,7 @@ namespace JobTrackingProject.Controllers
         }
 
         [HttpPut("{id}")]
-        public ActionResult UpdateUser(int id, [FromBody] User user)
+        public ActionResult UpdateUser(string id, [FromBody] User user)
         {
             if (id != user.Id) return BadRequest();
             _UserSerivce.UpdateUser(user);
@@ -46,7 +46,7 @@ namespace JobTrackingProject.Controllers
         }
 
         [HttpDelete("{id}")]
-        public ActionResult DeleteUser(int id)
+        public ActionResult DeleteUser(string id)
         {
             _UserSerivce.DeleteUser(id);
             return NoContent();

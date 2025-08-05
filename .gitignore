@@ -142,3 +142,4 @@ Icon? # macOS
 
 # Ignore auto-generated assembly info changes
 **/AssemblyInfo.cs
+secure/client_secret.json
